@@ -34,7 +34,7 @@ def select_pdf():
     pdf_label.config(text=os.path.basename(os.path.normpath(pdf_filename)))
 
 # 10 inital rows. Add more with add button
-for i in range(0,2):
+for i in range(0,35):
     add_row()
 
 # Creating gui
