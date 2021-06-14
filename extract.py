@@ -24,15 +24,14 @@ def get_info(entries):
         except ValueError:
             break
     return page_info
+
 def create_dir():
-    dir_name = simpledialog.askstring("Folder", "Enter output folder name: ")
+    dir_name = "output/" + simpledialog.askstring("Folder", "Enter output folder name: ")
     if not os.path.exists("output"):
         os.mkdir("output")
         print("Directory " , "output" ,  " Created ")
     else:
         print("Directory " , "output" ,  " already exists")
-
-    dir_name = "output/" + dir_name
     if not os.path.exists(dir_name):
         os.mkdir(dir_name)
         print("Directory " , dir_name ,  " Created ")
