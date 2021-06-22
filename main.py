@@ -14,8 +14,6 @@ frame0 = tk.Frame(root)
 frame1 = tk.Frame(root)
 frame0.grid(row=0, column=0)
 frame1.grid(row=2, column=0)
-#root.grid_rowconfigure(1, weight=1)
-
 
 def add_row():
     global row
@@ -40,7 +38,7 @@ def select_pdf():
 
 
 # 10 inital rows. Add more with add button
-for i in range(0, 35):
+for i in range(0, 32):
     add_row()
 
 # Creating gui

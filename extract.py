@@ -18,7 +18,7 @@ def get_info(entries):
         try:
             start = int(entry[0].get())
             end = int(entry[1].get())
-            name = str(i) + ". " + str(entry[2].get())
+            name = str(i + 1) + ". " + str(entry[2].get())
             if start > 0 and start < 10000 and end > 0 and end < 10000:
                 page_info.append([start, end, name])
         except ValueError:
